@@ -24,19 +24,41 @@
             <li>cagol</li>
             <li>murgi</li>
         </ul>
+        <ul>
+            <li>banana</li>
+            <li>carrot</li>
+            <li>apple</li>
+        </ul>
     </main>
     <script src="js/dom.js"></script>
     <script>
-        const student = {
-            name: 'John Doe',
-            age: 20,
-            grade: 'A'
-            study: function(time) {
-                console.log(time, 'study kortese');
+        // const student = {
+        //     name: 'John Doe',
+        //     Id: 11,
+        //     study: function(time) {
+        //         console.log(time, 'study kortese');
 
-            }
+        //     }
+        // }
+        const liCollection = document.getElementsByTagName('li');
+        // console.log(liCollection);
+        for (const li of liCollection) {
+            console.log(li.innerText);
         }
-        console.log('adding js insert the html file')
+
+        const allHeadings = document.getElementsByTagName('h1');
+        // এই লাইনটি একটি কনস্ ট্ যান্ ট allHeadings তৈরি করে, যা document(পেজের ডকুমেন্ ট অবজেক্ ট) থেকে সমস্ ত < h1 > ট্ যাগের এলিমেন্ টগুলো নিয়ে আসে। 
+        // getElementsByTagName ফাংশনটি একটি লাইভ HTML কো লেকশন রিটার্ ন করে, যার মধ্ যে পেজে থাকা সমস্ ত < h1 > এলিমেন্ ট অন্ তর্ ভুক্ ত থাকে।
+        for (const h1 of allHeadings) {
+            // এই লাইনটি একটি for...of লুপ ব্ যবহার করে allHeadings থেকে প্ রতিটি < h1 > এলিমেন্ টের 
+            // 
+
+            console.log(h1.innerText);
+            //     এই লাইনটি console.log() ফাংশন ব্ যবহার করে h1 এর innerText প্ রো পার্ টি কনসো লে প্ রিন্ ট করে। 
+            // innerText প্ রো পার্ টি টেক্ সটের কন্ টেন্ টকে রিটার্ ন করে যা < h1 > ট্ যাগের মধ্ যে রয়েছে। ফলে, প্ রতিটি < h1 > ট্ যাগের লেখা কনসো লে প্ রদর্ শিত হবে।
+            // summary:এই কোডটি পেজের সমস্ত <h1> এলিমেন্টগুলোকে খুঁজে বের করে এবং তাদের লেখা কনসোলে প্রদর্শন করে।
+
+        }
     </script>
 </body>
 
