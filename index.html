@@ -10,25 +10,48 @@
         li {
             color: orange;
         }
+        
+        #fruitstitle {
+            color: black;
+        }
+        
+        .imp-places {
+            color: brown
+        }
     </style>
 </head>
 
 <body>
     <header>
         <h1>welcome to my DOM</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nihil quos odio harum nam rerum officiis in vitae laborum eligendi?</p>
     </header>
     <main>
-        <h1>my awesome dom de baba</h1>
-        <ul>
-            <li>goru</li>
-            <li>cagol</li>
-            <li>murgi</li>
-        </ul>
-        <ul>
-            <li>banana</li>
-            <li>carrot</li>
-            <li>apple</li>
-        </ul>
+        <section>
+            <h1>my awesome dom de baba</h1>
+            <ul>
+                <li>goru</li>
+                <li>cagol</li>
+                <li>murgi</li>
+            </ul>
+        </section>
+        <section>
+            <h1 id="fruitstitle">fruits i like</h1>
+            <ul>
+                <li>banana</li>
+                <li>carrot</li>
+                <li>apple</li>
+            </ul>
+        </section>
+        <section>
+            <h1 id="places-title">places i like to visit</h1>
+            <ul>
+                <li class="imp-places">mountain</li>
+                <li class="imp-places">beach</li>
+                <li class="imp-places">forest</li>
+                <li>nodii</li>
+            </ul>
+        </section>
     </main>
     <script src="js/dom.js"></script>
     <script>
@@ -59,6 +82,12 @@
             // summary:এই কোডটি পেজের সমস্ত <h1> এলিমেন্টগুলোকে খুঁজে বের করে এবং তাদের লেখা কনসোলে প্রদর্শন করে।
 
         }
+        const fruitstitle = document.getElementById('fruitstitle');
+        fruitstitle.innerText = 'fruits changes by js';
+
+
+        const places = document.getElementsByClassName('imp-places');
+        console.log(places.innerText)
     </script>
 </body>
 
