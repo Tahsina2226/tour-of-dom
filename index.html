@@ -7,7 +7,7 @@
     <title>Tour of Dom</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        li {
+        .fruits-container li {
             color: orange;
         }
         
@@ -35,7 +35,7 @@
                 <li>murgi</li>
             </ul>
         </section>
-        <section>
+        <section class="fruits-container">
             <h1 id="fruitstitle">fruits i like</h1>
             <ul>
                 <li>banana</li>
@@ -63,6 +63,10 @@
 
         //     }
         // }
+
+
+
+        // option1:getElementsByTagName(kom use krb)
         const liCollection = document.getElementsByTagName('li');
         // console.log(liCollection);
         for (const li of liCollection) {
@@ -82,12 +86,31 @@
             // summary:এই কোডটি পেজের সমস্ত <h1> এলিমেন্টগুলোকে খুঁজে বের করে এবং তাদের লেখা কনসোলে প্রদর্শন করে।
 
         }
+
+
+
+        // option2:getElementsById(besi use krb)
         const fruitstitle = document.getElementById('fruitstitle');
         fruitstitle.innerText = 'fruits changes by js';
 
 
+
+
+
+        // option3:getElementsByClassName(besi use krb)
         const places = document.getElementsByClassName('imp-places');
         console.log(places.innerText)
+
+
+
+
+        //option4:querselectorAll(node list dibe)
+        //option5:querselector(will return the first one)
+        const someLi = document.querySelectorAll('fruits-container li');
+        console.log(someLi);
+        for (const li of someLi) {
+            console.log(li.innerText);
+        }
     </script>
 </body>
 
