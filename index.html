@@ -43,7 +43,7 @@
                 <li>apple</li>
             </ul>
         </section>
-        <section>
+        <section id="places-container" class="large-text">
             <h1 id="places-title">places i like to visit</h1>
             <ul>
                 <li class="imp-places">mountain</li>
@@ -54,6 +54,7 @@
         </section>
     </main>
     <script src="js/dom.js"></script>
+    <script src="js/styleinjs.js"></script>
     <script>
         // const student = {
         //     name: 'John Doe',
@@ -70,7 +71,7 @@
         const liCollection = document.getElementsByTagName('li');
         // console.log(liCollection);
         for (const li of liCollection) {
-            console.log(li.innerText);
+            // console.log(li.innerText);
         }
 
         const allHeadings = document.getElementsByTagName('h1');
@@ -80,7 +81,7 @@
             // এই লাইনটি একটি for...of লুপ ব্ যবহার করে allHeadings থেকে প্ রতিটি < h1 > এলিমেন্ টের 
             // 
 
-            console.log(h1.innerText);
+            // console.log(h1.innerText);
             //     এই লাইনটি console.log() ফাংশন ব্ যবহার করে h1 এর innerText প্ রো পার্ টি কনসো লে প্ রিন্ ট করে। 
             // innerText প্ রো পার্ টি টেক্ সটের কন্ টেন্ টকে রিটার্ ন করে যা < h1 > ট্ যাগের মধ্ যে রয়েছে। ফলে, প্ রতিটি < h1 > ট্ যাগের লেখা কনসো লে প্ রদর্ শিত হবে।
             // summary:এই কোডটি পেজের সমস্ত <h1> এলিমেন্টগুলোকে খুঁজে বের করে এবং তাদের লেখা কনসোলে প্রদর্শন করে।
@@ -99,7 +100,7 @@
 
         // option3:getElementsByClassName(besi use krb)
         const places = document.getElementsByClassName('imp-places');
-        console.log(places.innerText)
+        // console.log(places.innerText)
 
 
 
@@ -107,9 +108,9 @@
         //option4:querselectorAll(node list dibe)
         //option5:querselector(will return the first one)
         const someLi = document.querySelectorAll('fruits-container li');
-        console.log(someLi);
+        // console.log(someLi);
         for (const li of someLi) {
-            console.log(li.innerText);
+            // console.log(li.innerText);
         }
     </script>
 </body>
